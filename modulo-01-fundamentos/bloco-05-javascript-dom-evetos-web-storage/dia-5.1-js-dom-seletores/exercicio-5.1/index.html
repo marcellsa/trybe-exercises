@@ -81,9 +81,9 @@
 
       // Exercício 6 -Crie uma função que exiba o conteúdo de todas as tags <p> no console.
       function showTexts() {
-        const paragraphs = document.getElementsByClassName('p');
-        for (let index = 0; index < paragraphs.length; index += 1) {
-          console.log(paragraphs[index].innerHTML);
+        const paragraphs = document.getElementsByTagName('p');
+        for (let element of paragraphs) {
+          console.log(element.innerHTML);
         }
       }
       showTexts();
